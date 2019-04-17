@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Contact pop-up form</title>
+	<style>
+	    .contactus-popup-sec{
+		    font-family: 'Montserrat', sans-serif;
+			margin: 30px auto;
+			padding: 0; 
+			width: 530px;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.contactus-popup-sec h1{
+		    font-family: 'Montserrat', sans-serif;
+			font-size: 33px;
+			margin: 0px; 
+			padding: 20px 0; 
+			letter-spacing: 1px;
+			width: 100%; 
+			background: #00b6f1;
+			text-align: center; 
+			text-transform: uppercase; 
+			color: #fff;
+			text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.35);
+			float: left;
+		}
+		.contactus-popup-sec .form-content-sec {
+		     padding: 0 55px;
+			 width: 100%; 
+			 float: left; 
+			 box-sizing: border-box;
+             background:url(images/contact-bg-img.jpg) no-repeat;
+		}
+		
+		.contactus-popup-sec .form-content-sec h3{
+		    font-family: 'Montserrat', sans-serif; 
+			font-size: 20px; 
+			margin: 0px; 
+			padding: 30px 0; 
+			font-weight: 500; 
+			line-height: 29px; 
+			color: #fff; 
+			text-align: center;
+		}
+		
+		.contactus-popup-sec .form-content-sec h6 { 
+		    color: #fff; 
+			text-align: center; 
+			font-size: 12px; 
+			font-weight: 700; 
+			letter-spacing: 0.6px; 
+			margin: 0 0 50px 0; 
+			padding: 0px; 
+		}
+		.contactus-popup-sec .form-content-sec ul {
+     		margin: 0px; 
+			padding: 0px; 
+			float: left; 
+			width: 100%; 
+			list-style: none; 
+		}
+		.contactus-popup-sec .form-content-sec ul li {
+     		margin: 0 0 30px 0; 
+			padding: 0px; 
+			float: left; 
+			width: 100%; 
+		}
+		.contactus-popup-sec .form-content-sec ul li input { 
+		    font-family: 'Montserrat', sans-serif; 
+			font-size: 14px; 
+			color: #222; 
+			border: 0px; 
+			margin: 0px; 
+			padding: 15px; 
+			width: 100%; 
+			float: left;  
+			border-radius: 3px; 
+			box-sizing: border-box; 
+		}
+		.contactus-popup-sec .form-content-sec ul li textarea {
+     		font-family: 'Montserrat', sans-serif; 
+			font-size: 14px; 
+			color: #222; 
+			border: 0px; 
+			margin: 0px; 
+			padding: 15px; 
+			width: 100%; 
+			height: 150px; 
+			resize: none; 
+			float: left;
+			border-radius: 3px; 
+			box-sizing: border-box; 
+		}
+		.contactus-popup-sec .form-content-sec ul li button.contact-btn { 
+		    cursor: pointer; 
+			border: 0px; 
+			margin: 0px; 
+			width: 100%;
+			border-radius: 3px; 
+			padding: 15px 0; 
+			font-family: 'Montserrat', sans-serif; 
+			font-size: 22px; 
+			color: #fff; 
+			text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.31);
+			background: #8cc63f;
+        }
+		.contactus-popup-sec .form-content-sec ul li button.contact-btn:hover {
+     		background: #00ae4d; 
+		}
+		.contactus-popup-sec .contactus-popup-clsbtn { 
+		    font-size: 14px; 
+			line-height: 18px; 
+			width: 28px; 
+			height: 28px; 
+			border-radius: 50%; 
+			background: #FFF; 
+			position: absolute; 
+			cursor: pointer;
+            right: -8px;
+			top: -14px; 
+			border:0px;			
+		}
+        .contactus-popup-sec .contactus-popup-clsbtn:hover {
+		    color: #fff; 
+			background: #0dc4ff;
+		}
+	</style>
+</head>
+<body>
+   <section class="contactus-popup-sec" >
+	  <button class="contactus-popup-clsbtn close-btn">X</button>
+	  <h1 data-edit="text">Contact Us</h1>
+		    <div class="form-content-sec">
+				<h3 data-edit="text">Want to ask more about our services? 
+				  Just fill the form below and submit.</h3>
+					<ul>
+					  <li>
+						<input type="text" placeholder="Your Name" data-edit="placeholder">
+					  </li>
+					  <li>
+						<input type="email" placeholder="Your Email" data-edit="placeholder">
+					  </li>
+					  <li>
+						<textarea placeholder="Your Message" data-edit="placeholder"></textarea>
+					  </li>
+					  <li>
+						<button class="contact-btn"  type="submit">Contact Us</button>
+					  </li>
+					</ul>
+				<h6 data-edit="text">We Promise We Dont Spam Your Inbox</h6>
+		    </div>
+</section>
+</body>
+</html>
